@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Espai Abastos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Roboto" rel="stylesheet">
+    <link href="https://file.myfontastic.com/uHjwAgLr5b7KeoLux4v2Ej/icons.css" rel="stylesheet">
+</head>
+<body>
+   <section id="inicio">
+        <header>
+           <!--LOGO--> 
+            <div id="logo">
+               <a href="index.html">
+                    <img src="/img/launch.png">
+                    <h1 id="texto-logo">abastos</h1>
+                </a>
+            </div>
+            <!--MENÚ-->    
+            <nav>
+                <img src="/img/menu.png" id="imagen-menu" onclick="menu();">
+                <ul id="menu-principal">
+                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="#" class="activo">Nosotros</a></li>
+                    <li><a href="#" class="activo">Instalaciones</a></li>
+                    <li><a href="#" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--CONTENIDO-->
+        <h1 class="titulo-principal">instituto de educación secundaria IES ABASTOS</h1>
+        <p class="parrafo-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, dolores ea tempore. Eum soluta quibusdam praesentium ratione. Officia ducimus mollitia.</p>
+        <a href="#" id="btn-inicio">get started <i class="icon-info"></i></a>
+        <!--REDES SOCIALES-->
+        <ul class="social">
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-instagram"></span></a></li>
+            <li><a href="#"><span class="icon-gplus"></span></a></li>
+        </ul>
+    </section>
+    <script>
+        function menu(){
+            document.getElementById("#menu-principal").style.display = "inline";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(/img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    z-index: 1;
+}
+#texto-logo{
+    font-family: 'Raleway', sans-serif;
+    max-width: 160px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+}
+#logo>a{
+    text-decoration: none;
+    color: #fff;
+}
+#logo>a>img{
+    width: 35px;
+    font-size: 35px;
+    position: relative;
+    left: 10%;
+    top: 22px;
+    animation: rocket 2s alternate ease-in-out infinite;
+}
+@keyframes rocket{
+0% {
+    transform: translateY(-4px);
+}
+100% {
+    transform: translateY(4px);
+}
+}
+nav>ul>li{
+    display: ;
+    margin: 20px;
+}
+.activo{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+#menu-principal{
+    position: absolute;
+    background: #fff;
+    z-index: 3;
+    width: 300px;
+    padding: 20px;
+    right: 0px;
+    bottom: 60%;
+    left: 77.5%;
+    transition: all .3s;
+    display: none;
+}
+nav>ul{
+    max-width: 600px;
+    position: relative;
+    left: 900px;
+    bottom: 50px;
+}
+.titulo-principal{
+    position: relative;
+    left: 10%;
+    top: 140px;
+    max-width: 450px;
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.parrafo-principal{
+    position: relative;
+    left: 10%;
+    top: 160px;
+    max-width: 450px;
+    font-size: 18px;
+    text-align: justify;
+}
+#btn-inicio{
+    transition: all .3s;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 22px;
+    border: 2px solid;
+    padding: 8px 20px 8px 45px;
+    border-radius: 6px;
+    position: relative;
+    left: 10%;
+    top: 200px;
+    background: rgba(0,0,0,0);
+}
+#btn-inicio:hover{
+    background: rgba(0, 0, 0, .2);
+}
+.icon-info{
+    font-size: 16px;
+    position: relative;
+    right: 145px;
+}
+.social>li{
+    display: inline;
+    margin: 8px;
+}
+.social>li>a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 10%;
+    top: 230px;
+}
+.icon-facebook, .icon-twitter, .icon-instagram, .icon-gplus{
+    transition: all .2s;
+}
+.icon-facebook:hover{
+    color: 	#3b5998;
+}
+.icon-twitter:hover{
+    color: #00aced;
+}
+.icon-instagram:hover{
+    color: #bc2a8d;
+}
+.icon-gplus:hover{
+    color: #dd4b39;
+}
+#home{
+    width: 20px;
+    position: relative;
+    right: 70px;
+    top: 4px;
+}
+#imagen-menu{
+    width: 35px;
+    position: relative;
+    left: 90%;
+    bottom: 55px;
+    cursor: pointer;
+}
