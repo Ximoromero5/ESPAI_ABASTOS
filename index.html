@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800|Roboto" rel="stylesheet">
     <link href="https://file.myfontastic.com/uHjwAgLr5b7KeoLux4v2Ej/icons.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <!--INICIO-->
@@ -20,7 +21,7 @@
             </div>
             <!--MENÚ-->    
             <nav>
-                <img src="./img/menu.png" id="imagen-menu" onclick="menu();">
+                <img src="./img/menu.png" id="imagen-menu">
                 <ul id="menu-principal">
                     <li><a href="index.html" class="activo">Inicio</a></li>
                     <li><a href="#" class="activo">Nosotros</a></li>
@@ -47,9 +48,11 @@
         
     </section>
     <script>
-        function menu(){
-            document.getElementById("#menu-principal").style.display = "inline";
-        }
+        $(document).ready(function(){
+           $("#imagen-menu").click(function(){
+              $("#menu-principal").addClass("derecha");
+           });
+        });
     </script>
 </body>
 </html>
