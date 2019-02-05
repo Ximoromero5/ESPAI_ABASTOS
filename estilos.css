@@ -62,9 +62,6 @@ ul#menu-principal{
     bottom: 0;
     transition: all .3s;
 }
-.derecha{
-    right: -200px;
-}
 .titulo-principal{
     position: relative;
     left: 10%;
