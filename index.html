@@ -49,10 +49,17 @@
     </section>
     <script>
         $(document).ready(function(){
+            flag = false;
            $("#imagen-menu").click(function(){
-              $("#menu-principal").addClass("derecha");
+                if(!flag){
+                    $("#menu-principal").animate({right: '0px'});
+                    flag = true;
+                } else{
+                    $("#menu-principal").animate({right: '-380px'});
+                    flag = false;
+                }
+              });
            });
-        });
     </script>
 </body>
 </html>

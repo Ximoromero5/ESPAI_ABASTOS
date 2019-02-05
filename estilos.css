@@ -58,7 +58,7 @@ ul#menu-principal{
     background: #fff;
     width: 22.5%;
     height: 100%;
-    right: -360px;
+    right: -380px;
     bottom: 0;
     transition: all .3s;
 }
@@ -134,7 +134,7 @@ ul#menu-principal{
 #imagen-menu{
     width: 40px;
     position: fixed;
-    left: 94%;
+    left: 30%;
     bottom: 700px;
     cursor: pointer;
 }
