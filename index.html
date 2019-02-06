@@ -52,10 +52,12 @@
             flag = false;
            $("#imagen-menu").click(function(){
                 if(!flag){
-                    $("#menu-principal").animate({right: '0px'});
+                    $("#menu-principal").animate({right: '0px'}, 150);
+                    $("#imagen-menu").animate({left: '70%'}, 450);
                     flag = true;
                 } else{
-                    $("#menu-principal").animate({right: '-380px'});
+                    $("#menu-principal").animate({right: '-380px'}, 150);
+                    $("#imagen-menu").animate({left: '92%'}, 450);
                     flag = false;
                 }
               });
