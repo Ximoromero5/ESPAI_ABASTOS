@@ -1,2 +1,3 @@
 # ESPAI_ABASTOS
-Página web espai abastos 1 DAW
+Página web Espai Abastos 1º DAW
+(Hecho por: Alberto, Jorge y Ximo)

@@ -135,3 +135,32 @@ ul#menu-principal{
     bottom: 700px;
     cursor: pointer;
 }
+
+/* Sobre Nosotros */
+.tblock {
+    position: absolute;
+    left: 2.7%;
+    right: 2.7%;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: rgba(24, 21, 21, 0.651);
+    color: white;
+    top: 70%;
+    border-style: groove;
+}
+
+.tittle {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    letter-spacing: 2.5px;
+    font-size: 24px;
+}
+
+.pabout {
+    left: 10%;
+    right: 10%;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 3%;
+}
