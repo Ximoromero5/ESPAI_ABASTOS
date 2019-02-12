@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:800|Roboto" rel="stylesheet">
     <link href="https://file.myfontastic.com/uHjwAgLr5b7KeoLux4v2Ej/icons.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
 </head>
 <body>
     <!--INICIO-->
@@ -22,7 +25,7 @@
             <!--MENÚ-->    
             <nav>
                 <img src="./img/menu.png" id="imagen-menu">
-                <ul id="menu-principal">
+                <ul id="menu-principal" class="smooth-scroll list-unstyled">
                     <li><a href="#inicio" class="activo">Inicio</a></li>
                     <li><a href="#nosotros" class="activo">Nosotros</a></li>
                     <li><a href="#instalaciones" class="activo">Instalaciones</a></li>
@@ -48,17 +51,17 @@
         <h1>Obtén toda la información que necesites sobre nosotros.</h1>
         <div class="cubo1">
             <img src="./img/settings.png">
-            <h3>Lorem Ipsum Dolor</h3>
+            <h3>AGENCIA CREATIVA</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eius consequuntur ut veritatis, modi, aliquam illo.</p>
         </div>
         <div class="cubo2">
             <img src="./img/cloud.png">
-            <h3>Lorem Ipsum Dolor</h3>
+            <h3>TECNOLOGÍA MODERNA</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eius consequuntur ut veritatis, modi, aliquam illo.</p>
         </div>
         <div class="cubo3">
             <img src="./img/graph.png">
-            <h3>Lorem Ipsum Dolor</h3>
+            <h3>TRABAJO EFICAZ</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eius consequuntur ut veritatis, modi, aliquam illo.</p>
         </div>
     </section>
@@ -72,7 +75,7 @@
     <section id="contacto">
         
     </section>
-    
+
     <script>
         $(document).ready(function(){
             flag = false;
@@ -89,6 +92,5 @@
               });
            });
     </script>
-
 </body>
 </html>

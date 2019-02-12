@@ -3,10 +3,12 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    z-index: 1;
 }
 #inicio{
     background: url(./img/6.jpg);
