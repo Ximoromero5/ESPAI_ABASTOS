@@ -191,3 +191,16 @@ ul#menu-principal{
     font-weight: lighter;
     color: #505050;
 }
+
+/*BOTÓN SUBIR*/
+
+#myBtn{
+    width: 60px;
+    height: 60px;
+    background: tomato;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+}
