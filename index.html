@@ -35,8 +35,8 @@
         </header>
         <!--CONTENIDO-->
         <h1 class="titulo-principal">instituto de educación secundaria IES ABASTOS</h1>
-        <p class="parrafo-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, dolores ea tempore. Eum soluta quibusdam praesentium ratione. Officia ducimus mollitia.</p>
-        <a href="#" id="btn-inicio">get started <i class="icon-info"></i></a>
+        <p class="parrafo-principal">Somos una empresa de alquiler de espacios para diversas actividades, disponemos de una gran cantidad de instalaciones a la disposición de cualquiera de nuestros clientes.</p>
+        <a href="#instalaciones" id="btn-inicio">Empieza ya!<i class="icon-info"></i></a>
         <!--REDES SOCIALES-->
         <ul class="social">
             <li><a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -68,7 +68,19 @@
 
     <!------INSTALACIONES------>
     <section id="instalaciones">
-        
+        <h1>Nuestras instalaciones disponibles</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolor maiores quam, provident accusantium tenetur fuga id consequatur. Possimus earum quos quas ullam quaerat, cum, distinctio deserunt laborum eius accusamus? Lorem ipsum dolor sit amet.</p>
+        <div id="imagenes">
+            <img src="./img/01.jpg" id="img1">
+            <img src="./img/02.jpg" id="img2">
+            <img src="./img/03.jpg" id="img3">
+            <img src="./img/04.jpg" id="img4">
+            <img src="./img/05.jpg" id="img5">
+            <img src="./img/06.jpg" id="img6">
+            <img src="./img/07.jpg" id="img7">
+            <img src="./img/08.jpg" id="img8">
+            <img src="./img/09.jpg" id="img9">
+        </div>
     </section>
 
     <!------CONTACTO------>
@@ -99,9 +111,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtn").style.display = "block";
   } else {
-    document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtn").style.display = "none";
   }
 }
 
@@ -112,13 +124,26 @@ function topFunction() {
 </script>
 <script>
     $(document).ready(function(){
-        $(document).scroll(function(){
-            $("#menu-principal").animate({right: '-380px'}, 0);
-            $("#imagen-menu").css('display', 'none');
-        });
-        $("#myBtn").click(function(){
-            $("#imagen-menu").css('display', 'block');
-        });
+        var lastScrollTop = 0;
+        $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop){
+                $("#menu-principal").animate({right: '-380px'}, 0);
+                $("#imagen-menu").animate({left: '85%'}, 450);
+                $("#imagen-menu").hide();
+            } else {
+                $("#imagen-menu").attr('src', './img/menu.png');
+                $("#imagen-menu").animate({left: '85%'}, 450);
+                $("#imagen-menu").show();
+            }
+        lastScrollTop = st;
+});
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        jQuery("#imagenes").unitegallery();
     });
 </script>
 </body>

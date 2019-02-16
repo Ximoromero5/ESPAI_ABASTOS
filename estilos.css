@@ -69,6 +69,7 @@ ul#menu-principal{
     right: -380px;
     bottom: 0;
     transition: all .3s;
+    border-radius: 6px;
 }
 .titulo-principal{
     position: relative;
@@ -149,7 +150,6 @@ ul#menu-principal{
 #nosotros{
     width: 100%;
     height: 800px;
-
 }
 #nosotros>h1{
     position: relative;
@@ -214,6 +214,39 @@ body::-webkit-scrollbar{
     width: 8px;
 }
 body::-webkit-scrollbar-thumb{
-    background: #333;
+    background: #555;
     border-radius: 4px;
+}
+/*Instalaciones*/
+#instalaciones{
+    width: 100%;
+    height: 900px;
+    background: #333;
+}
+#instalaciones>h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+#instalaciones>p{
+    margin: 15px 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: #fff;
+}
+#imagenes{
+    width: 70%;
+    position: relative;
+    left: 55%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+#imagenes>img{
+    width: 320px;
+    height: 200px;
+    text-align: center;
 }
