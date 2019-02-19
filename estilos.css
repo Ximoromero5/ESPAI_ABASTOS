@@ -248,9 +248,14 @@ body::-webkit-scrollbar-thumb{
     transform: translate(-50%, -50%);
 }
 #imagenes>img{
+    filter: grayscale(100%);
     width: 320px;
     height: 200px;
     text-align: center;
+    transition: all .2s;
+}
+#imagenes>img:hover{
+    filter: none;
 }
 
 /*SEPARADOR*/
