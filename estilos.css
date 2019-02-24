@@ -30,6 +30,7 @@ body{
 }
 #logo>a{
     text-decoration: none;
+    text-shadow: 2px 2px grey;
     color: #fff;
 }
 #logo>a>img{
@@ -79,6 +80,8 @@ ul#menu-principal{
     text-align: justify;
     font-weight: lighter;
     font-size: 38px;
+    text-shadow: 2px 2px grey;
+    letter-spacing: 2px;
     text-transform: capitalize;
 }
 .parrafo-principal{
@@ -150,6 +153,7 @@ ul#menu-principal{
 #nosotros{
     width: 100%;
     height: 800px;
+    background-color: #ebebeba1;
 }
 #nosotros>h1{
     position: relative;
@@ -160,6 +164,7 @@ ul#menu-principal{
     color: #333;
     font-size: 50px;
     text-align: center;
+    text-shadow: 2px 2px grey;
     padding-top: 80px;
     letter-spacing: 2px;
 }
@@ -177,13 +182,16 @@ ul#menu-principal{
     width: 30%;
     height: 40%;
     display: inline-block;
-    margin: 10px 24px;
+    margin: 10px 15px;
 }
 .cubo1>h3, .cubo2>h3, .cubo3>h3{
     text-align: center;
     font-size: 28px;
     position: relative;
     top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px white;
+    border-bottom: 2px solid grey;
     color: #333;
 }
 .cubo1>p, .cubo2>p, .cubo3>p{
@@ -191,6 +199,7 @@ ul#menu-principal{
     padding: 15px 15px;
     margin-top: 25px;
     font-size: 18px;
+    text-shadow: 2px 2px white;
     font-weight: lighter;
     color: #505050;
 }
@@ -220,8 +229,10 @@ body::-webkit-scrollbar-thumb{
 /*Instalaciones*/
 #instalaciones{
     width: 100%;
-    height: 900px;
-    background: #333;
+    height: 1100px;
+    background: #222;
+    background-position: center;
+    background-size: cover;
 }
 #instalaciones>h1{
     font-family: 'Raleway', sans-serif;
@@ -229,26 +240,35 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     padding-top: 60px;
     letter-spacing: 2px;
+    text-shadow: 3px 3px black;
     color: #fff;
 }
 #instalaciones>p{
     margin: 15px 30px;
     font-size: 18px;
+    text-shadow: 2px 2px #000;
     font-weight: lighter;
     text-align: center;
     color: #fff;
 }
 #imagenes{
-    width: 70%;
+    width: 90%;
     position: relative;
-    left: 55%;
-    top: 35%;
+    left: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
 }
 #imagenes>img{
-    width: 320px;
+    filter: grayscale(100%);
+    width: 340px;
     height: 200px;
     text-align: center;
+    margin: 3%;
+    transition: all .2s;
+}
+#imagenes>img:hover{
+    filter: none;
+    transform: scale(1.35);
 }
 
 /*SEPARADOR*/
@@ -262,21 +282,229 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
 }
 #separador>h1{
-    font-size: 70px;
+    font-size: 60px;
     position: relative;
     font-family: 'Raleway', sans-serif;
     top: 20%;
     left: 55%;
     transform: translate(-50%, -50%);
     text-transform: capitalize;
-    letter-spacing: 2px;
+    text-shadow: 2px 2px grey;
+    letter-spacing: 5px;
 }
 #separador>p{
     position: relative;
     font-size: 18px;
     font-weight: lighter;
+    text-shadow: 1px 1px rgb(93, 133, 133);
+    color: grey;
     width: 800px;
     left: 5.5%;
     top: 15%;
     letter-spacing: 1px;
 }
+
+/* Contacto */
+#contacto{
+    width: 100%;
+    height: 800px;
+}
+#texto {
+    text-align: center;
+    margin-top: 3%;
+    color: grey;
+    font-weight: bold;
+    text-shadow: 2px 2px white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+
+h3.contactott {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1%;
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    text-shadow: 2px 2px grey;
+}
+
+.mapa iframe {
+    width: 500px;
+    height: 400px;
+    border: none;
+    position: relative;
+    left: 10%;
+    margin-bottom: 4%;
+}
+
+.formularios input, .formulariomensaje textarea {
+    width: 50%;
+    margin-top: 3px;
+    font-size: 14px;
+    color: #000;
+    padding: .8em .7em;
+    outline: none;
+    background: rgba(161, 160, 160, 0.062);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 4px #888888;
+    float: right;
+    position: relative;
+    margin-bottom: 3px;
+    resize: none;
+}
+
+.formulariomensaje textarea {
+    float: right;
+    width: 50%;
+    height: 200px;
+    margin-top: 2%;
+}
+
+.enviar {
+    font-size: 16px;
+    padding: 10px 26px;
+    position: relative;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: #6161617a;
+    letter-spacing: 1px;
+    border: none;
+    top: 400px;
+    left: 48%;
+    cursor: pointer;
+    outline: 0;
+}
+
+.formulario {
+    position: relative;
+    width: 60%;
+    right: 450px;
+    left: 18%;
+    bottom: 470px;
+}
+footer>h2{
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+    padding: 15px;
+    font-size: 18px;
+    position: absolute;
+    text-shadow: 2px 2px black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    background: #111;
+    position: relative;
+    top: 100px;
+    bottom: 0px;
+}
+
+/* ESPACIOS */
+
+#espacios{
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+}
+
+#espacios>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px black;
+    color: #fff;
+}
+#espacios>p{
+    margin: 15px 30px;
+    font-size: 18px;
+    text-shadow: 2px 2px #000;
+    font-weight: lighter;
+    text-align: center;
+    color: #fff;
+}
+
+.tarjeta1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 15%;
+    margin-top: 1.5%;
+}
+
+.tarjeta2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 40%;
+    margin-top: 1.5%;
+}
+
+.tarjeta3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 65%;
+    margin-top: 1.5%;
+}
+  
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+  
+.tarjeta1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta button:hover {
+    opacity: 0.7;
+  }
