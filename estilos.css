@@ -404,3 +404,107 @@ footer{
     top: 100px;
     bottom: 0px;
 }
+
+/* ESPACIOS */
+
+#espacios{
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+}
+
+#espacios>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px black;
+    color: #fff;
+}
+#espacios>p{
+    margin: 15px 30px;
+    font-size: 18px;
+    text-shadow: 2px 2px #000;
+    font-weight: lighter;
+    text-align: center;
+    color: #fff;
+}
+
+.tarjeta1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 15%;
+    margin-top: 1.5%;
+}
+
+.tarjeta2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 40%;
+    margin-top: 1.5%;
+}
+
+.tarjeta3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: absolute;
+    left: 65%;
+    margin-top: 1.5%;
+}
+  
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+  
+.tarjeta1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.tarjeta button:hover {
+    opacity: 0.7;
+  }
